@@ -2,6 +2,7 @@
 
 /*let user = {
   name: "amine",
+/*Spread opearter
   age: 25,
   email: "chtiouiamine82@gmail.com",
 };
@@ -30,14 +31,13 @@ if (age <= 18) {
 let ven = [1, 2, 3, 4];
 let ad = ven.map((don) => console.log(don ** 2));
 */
-
-/*Spread opearter*/
+/*
 let fruit = ["banana", "orange", "frize", "apple"];
 let vegeur = ["batata", "tomato", "onyon"];
 console.log(...fruit, ...vegeur);
 console.log(...fruit, ...vegeur, "lavoca");
-
-/*Rest opearter*/
+*/
+/*Rest opearter
 
 function fofo(nom, prenom, ...per) {
   console.log(nom);
@@ -45,3 +45,11 @@ function fofo(nom, prenom, ...per) {
   console.log(per);
 }
 fofo("amine", "chtioui", 12, "ms", "g.i");
+*/
+
+let colorButton = document.getElementById("idclasse");
+colorButton.addEventListener("click", function () {
+  // تغيير لون الخلفية للصفحة عند الضغط على الزر
+  document.body.style.backgroundColor =
+    "#" + Math.floor(Math.random() * 16777215).toString(16);
+});
